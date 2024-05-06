@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+html{
+    --font: 16px;
+    font-size: calc(.8 * var(--font));
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    
+}
+#cont_all_login{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.img_back_left{
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 18.75em;
+}
+.img_back_right{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 18.75em;
+}
+.main_login{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+
+}
+img{
+    width: 12.5em;
+
+}
+
+.container_text_header{
+    display: flex;
+    height: 6.25em;
+    align-items: center;
+    
+}
+
+.container_text_header h1{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    font-size: 1.5em;
+    
+}
+
+.icon_header{
+    width: 1.5625em;
+    height: 1.5625em;
+}
+.container_logo{ 
+    display: flex;
+    flex-direction: column;
+    margin-right: 6.25em;
+    max-width: 500px;
+}
+.logo{
+    width: 25.3125em;
+    height: 14.6875em;
+    margin-bottom: 2.5em;
+
+}
+.eslogan{
+    font-size: 4.375em
+}
+.container_form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.formL{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+
+
+
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0.625em;
+    border-radius: 15px;
+}
+#form2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10000px;
+}
+.logear{
+    width: 25em;
+    height: 4.375em;
+    border: 1px solid transparent;
+    border-radius: 35px;
+    margin-top: 0.9375em;
+    margin-bottom: 1.25em;
+    padding-left: 0.625em;
+    color: rgb(232, 232, 232);
+    font-size: 1.25em;
+    background-color: rgb(146, 145, 145);
+}
+.form1{
+    height:350px ;
+
+}
+.iniciar{
+    width: 20.625em;
+    height: 3.125em;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding-left: 0.625em;
+    color: rgb(232, 232, 232);
+    font-size: 1.25em;
+    cursor: pointer;
+    background-color: rgb(73, 73, 73);
+}
+::placeholder { 
+    color: rgb(235, 235, 235); 
+}
+
+
+#boton1{
+    margin-top: 1.5625em;
+    background-color: transparent;
+    color: rgb(232, 232, 232);
+    border: none;
+    cursor: pointer;
+}
+#boton2{
+    margin-top: 1.5625em;
+    background-color: transparent;
+    color: rgb(232, 232, 232);
+    border: none;
+    cursor: pointer;
+}
+#boton1{
+    margin-bottom: 50px;
+}
+
+
+@keyframes login {
+    0% {
+        border-radius: 15px;
+    }
+    50% {
+
+    }
+    90% {
+
+
+    }
+    100% {
+        bottom: 1100px;
+        transition: all 300ms;
+    }
+  }
+.form{
+    animation: login 1s linear forwards;
+    position: relative;
+    bottom: -20px;
+    transition: all 300ms;
+
+}
+
+
+
+ @keyframes registro {
+    0% {
+        top: -1000px;
+    }
+    20% {
+        top: -20px;   
+    }
+    100% {
+        top: -20px;
+        transition: all 1000ms;
+        background-color: rgb(88, 88, 88, 0);
+    }
+  }
+  .form2{
+    animation: registro 10s linear forwards;
+
+
+    transition: all 10000ms;
+
+}
+
+
+
+
+
+@keyframes logini {
+    0% {
+        border-radius: 15px;
+    }
+    50% {
+
+    }
+    90% {
+
+
+    }
+    100% {
+        bottom: 1000px;
+        transition: all 300ms;
+    }
+  }
+.form2i{
+    animation: logini 1s linear forwards;
+    position: relative;
+    bottom: 0px;
+    transition: all 300ms;
+
+}
+@keyframes registroi {
+    0% {
+        top: -1000px;
+    }
+    20% {
+        top: 0px;   
+    }
+    100% {
+        top: 0px;
+        transition: all 1000ms;
+        background-color: rgb(88, 88, 88, 0);
+    }
+  }
+.formi{
+    animation: registroi 10s linear forwards;
+
+
+    transition: all 10000ms;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1054px) {
+    .main_login{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    
+    }
+    
+    .container_logo{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.25em;
+    }
+
+    .logo{
+        width: 25.3125em;
+        height: 14.6875em;
+        margin-bottom: 2.5em;
+    
+    }
+
+
+
+    #form{
+        margin: 7.5em 0 3.75em;
+    }
+    @keyframes registro {
+        0% {
+            top: -1000px;
+        }
+        20% {
+            top: 50px;   
+        }
+        100% {
+            top: 50px;
+            transition: all 0ms;
+            background-color: rgb(88, 88, 88, 0);
+        }
+      }
+      .form2{
+        animation: registro 10s linear forwards;
+    
+    
+        transition: all 0ms;
+    
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+    html{
+        font-size: calc(.6 * var(--font));
+    }
+    .main_login{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200%;
+        height: 80%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    
+    }
+
+    .logo{
+        width: 25.3125em;
+        height: 14.6875em;
+        margin-bottom: 2.5em;
+    
+    }
+
+    .container_logo{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    #form{
+        margin: 7.5em 0 3.75em;
+    }
+    .logear{
+        width: 25em;
+    }
+    @keyframes registro {
+        0% {
+            top: -1000px;
+        }
+        20% {
+            top: 50px;   
+        }
+        100% {
+            top: 50px;
+            transition: all 0ms;
+            background-color: rgb(88, 88, 88, 0);
+        }
+      }
+      .form2{
+        animation: registro 10s linear forwards;
+    
+    
+        transition: all 0ms;
+    
+    }
+  }
+

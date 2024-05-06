@@ -1,0 +1,52 @@
+.containerU {
+    width: 100%;
+    margin: 20px;
+    margin-top: 100px;
+    background-color: #fff;
+    color: #010101;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .user-table th {
+    background-color: #8ae9f1;
+  }
+  
+  .submit-btn {
+      background-color: #010101; /* Color de fondo */
+      color: white; /* Color del texto */
+      padding: 10px 20px; /* Espaciado interno (arriba/abajo - izquierda/derecha) */
+      border: none; /* Sin borde */
+      border-radius: 4px; /* Bordes redondeados */
+      cursor: pointer; /* Cambiar el cursor al pasar por encima */
+      transition: background-color 0.3s ease; /* Transición para el color de fondo */
+      margin-bottom: 25px;
+  }
+  
+  .submit-btn:hover {
+      background-color: #0c0c0c; /* Cambio de color de fondo al pasar el mouse por encima */
+  }
+
+  .check{
+    cursor: pointer;
+  }
+  
+  

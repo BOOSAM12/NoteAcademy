@@ -1,0 +1,210 @@
+html{
+    --font: 16px;
+    font-size: calc(.8 * var(--font));
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-image: url("IMG/background_one.png");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;  */
+    background-color: black;
+    color: white;
+
+    
+}
+.Gcont_alla{
+    position: absolute;
+    background-color: black;
+    min-height: 100%;
+    width: 100%;
+    z-index: -1000000;
+}
+.Gizquierda{
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 18.75em;
+}
+.Gderecha{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 18.75em;
+}
+.Gcontainer_text_header{
+    display: flex;
+    height: 6.25em;
+    align-items: center;
+    
+    
+}
+.Gcontainer_text_header h1{
+    font-size: 1.25em;
+    margin-right: 0.9375em;
+    margin-left: 3.4375em;
+    cursor: none;
+}
+.Gicon_header{
+    width: 1.5625em;
+    height: 1.5625em;
+}
+.Gcontainer_logo{
+    position: relative;
+    height: 11.5em;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    
+    top: 7em;
+}
+.Glogo{
+    min-width: 11.5em;
+    z-index: 1000;
+
+}
+main{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 44;
+    background-color: transparent;
+
+}
+.Gcont_all{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Gcont_forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Gcontainer_crear{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    margin: 1.875em;box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 25em;
+    height: 28.125em;
+    min-width: 18.75em;
+    border-radius: 2px;
+    text-align: center;
+    background: rgb(86,86,87);
+    background: linear-gradient(90deg, rgba(86,86,87,1) 0%, rgba() 100%);
+    box-shadow: rgb(0, 123, 255) 0px 20px 30px -10px;
+}
+.titulo_grupos{
+    color: rgb(24, 24, 24);
+    font-size: 2.5em;
+    cursor: default;
+}
+.Gcont_input p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 2.5em;
+    color: rgb(24, 24, 24);
+    background-color: #94b8ae;
+    border-radius: 15px;
+    cursor: default;
+}
+.Gtext{
+    width: 100%;
+    height: 2.8125em;
+    border-radius: 20px;
+    border: 0.001px solid rgb(87, 86, 86);
+    background-color: #94b8ae; 
+    text-align: center;
+}
+::placeholder { 
+    color: rgb(82, 82, 82); 
+    font-size: 1em;
+}
+
+.Gbtn{
+    width: 30%;
+    height: 2.8125em;
+    border-radius: 20px;
+    border: 0.001px solid rgb(87, 86, 86);
+    background-color: #94b8ae; 
+    text-align: center;
+    cursor: pointer;
+    border: 0.1px solid rgb(227, 227, 227);
+    transition: all 300ms;
+}
+.Gbtn:hover{
+    background-color: #94aca5;
+}
+.Gicono_super{
+    position: absolute;
+
+    width: 2.2em;
+    margin-left: 5px;
+}
+
+
+
+.Gicono_input{
+    position: absolute;
+
+    width: 2.1125em;
+    margin-left: 5px;
+}
+.Gicono_input2{
+    position: absolute;
+
+    width: 2.8125em;
+    margin-left: 5px;
+}
+.Garriba{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Gcont_input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+
+}
+.Gborrar{
+    position: absolute;
+}
+
+
+@media (max-width:465px) {
+html{
+    font-size: 11px;
+    height: 100%;
+}
+.Gcontainer_text_header{
+    visibility: hidden;
+}
+h2{
+    margin-top: 1.4265625em;
+}
+  }

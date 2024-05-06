@@ -1,0 +1,62 @@
+.container_alla{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form_asignatura{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    color: black;
+    background: rgba(204, 0, 255, 0.05);
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+    transition: all 500ms;
+}
+.form_asignatura:hover{
+    box-shadow: 0 0 10px #d2d1d1, 0 0 20px #d2d1d1, 0 0 30px #d2d1d1;
+}
+.asignatura{
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.026);
+    border: none;
+    color: black;
+    font-size: 20px;
+    transition: all 500ms;
+    padding: 8px 12px; /* Espaciado interno (arriba/abajo - izquierda/derecha) */
+    border: 1px solid #000000; /* Borde de 1 píxel sólido con color gris */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: none; /* Sin sombra */
+    transition: border-color 0.3s ease; /* Transición para el color del borde */
+
+}
+.asignatura:active {
+    outline:none;
+}
+.asignatura:focus {
+    outline:none;
+    border-color: rgb(151,229,232);
+    box-shadow: 0 0 10px rgb(151,229,232), 0 0 20px rgb(151,229,232), 0 0 30px rgb(151,229,232);
+}
+.enviar_asignatura{
+    background-color: #010101; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo - izquierda/derecha) */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+    margin-bottom: 25px;
+  }
+  
+.enviar_asignatura:hover{
+    background-color: #0c0c0c; /* Cambio de color de fondo al pasar el mouse por encima */
+  }

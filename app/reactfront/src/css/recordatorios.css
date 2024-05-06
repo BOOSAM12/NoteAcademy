@@ -1,0 +1,105 @@
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.reminder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reminder-item {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: slideInFromBottom 0.5s ease;
+  cursor: pointer;
+}
+
+.reminder-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.reminder-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.reminder-date {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #888;
+}
+
+.reminder-priority {
+  font-size: 14px;
+  color: #888;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reminder-item:hover {
+  background-color: #fdfbfb;
+}
+
+.reminder-item.selected {
+  background-color: #e6e6e6;
+}
+
+.imgDesplegar{
+  width: 30px;
+  margin-top: 5px;
+}
+.spanDesplegar{
+  width: auto;
+  display: flex;
+
+  justify-content: center;
+}
+
+.marcarHecho{
+  background-color: #010101; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno (arriba/abajo - izquierda/derecha) */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición para el color de fondo */
+  margin-bottom: 25px;
+}
+.marcarHecho:hover{
+  background-color: #0c0c0c; /* Cambio de color de fondo al pasar el mouse por encima */
+}
+.hecho{
+  background-color: #c2f9c5;
+  transition: all 500ms;
+}
+
+.hecho:hover {
+  background-color: #a0ffa5;
+}
+
+.formR{
+  display: inline;
+  width: auto;
+}
