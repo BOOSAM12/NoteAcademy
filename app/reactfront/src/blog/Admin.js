@@ -689,7 +689,7 @@ const Admin = () => {
 
 
 
-
+{/* //empiezas el formulario de crear recordatorio */}
 
 
       <div className={form2Classes}>
