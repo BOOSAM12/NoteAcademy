@@ -484,7 +484,7 @@ const Admin = () => {
                         >
                           Editar
                         </button>
-                        {recordatorio.realizado == 1 ? (
+                        {recordatorio.realizado === 1 ? (
                           <p className="RformR"> Realizado</p>
                         ) : (
                           <button
@@ -501,7 +501,7 @@ const Admin = () => {
                         key="exclude"
                         style={{
                           transform: `rotate(${
-                            isOpen && idDes == recordatorio.id ? 180 : 0
+                            isOpen && idDes === recordatorio.id ? 180 : 0
                           }deg)`,
                           transition: "320ms ease-in-out",
                         }}
@@ -520,7 +520,7 @@ const Admin = () => {
                         />
                       </svg>
                     </button>
-                    {isOpen && idDes == recordatorio.id && (
+                    {isOpen && idDes === recordatorio.id && (
                       <div
                         style={{
                           gap: "1rem",
@@ -532,7 +532,7 @@ const Admin = () => {
                         {/* <div className="Rreminder-item hecho" onClick={despleg === 'RimgDesplegar' ? () => setDesplegar('RimgDesplegarRotate') : () => setDesplegar('RimgDesplegar')}> */}
                         <div
                           className={
-                            recordatorio.realizado == 1
+                            recordatorio.realizado === 1
                               ? "Rreminder-item hecho"
                               : "Rreminder-item"
                           }
@@ -800,13 +800,13 @@ const Admin = () => {
         <div className="cont_datos">
           <div className="datos_1">
             <div className="cont_img1">
-              {admin == 1 || admin == 2 ? (
+              {admin === 1 || admin === 2 ? (
                 <img className="img1" src={asignaturass} alt="" />
               ) : (
                 <img className="img1" src={asignaturasE} />
               )}
             </div>
-            {admin == 1 || admin == 2 ? (
+            {admin === 1 || admin === 2 ? (
               <span className="datos_letras">Administrador</span>
             ) : (
               <span className="datos_letras">Estudiante</span>
